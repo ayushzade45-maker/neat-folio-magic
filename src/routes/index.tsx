@@ -42,10 +42,28 @@ function Home() {
         <section className="bg-grid-paper">
           <div className="mx-auto max-w-3xl px-6 py-16 text-center lg:py-24">
             <p className="animate-rise font-mono text-xs text-sky">( 01 / index — hello, world )</p>
+            <div
+              className="animate-rise mx-auto mt-6 w-fit -rotate-2"
+              style={{ animationDelay: "60ms" }}
+            >
+              <div className="animate-float rounded-2xl border border-line bg-card p-2.5 shadow-xl" style={{ ["--float-rotate" as string]: "-2deg" }}>
+                <img
+                  src={ayushAsset.url}
+                  alt="Ayush Zade"
+                  width={240}
+                  height={300}
+                  className="mx-auto aspect-[4/5] w-40 rounded-xl object-cover sm:w-44"
+                />
+                <p className="mt-2 text-center font-mono text-[11px] text-muted-foreground">
+                  fig. 00 — ayush
+                </p>
+              </div>
+            </div>
             <h1
-              className="animate-rise mt-6 font-display text-[clamp(3.2rem,10vw,6.5rem)] leading-[0.92] font-extrabold tracking-tight text-balance"
+              className="animate-rise mt-8 font-display text-[clamp(3.2rem,10vw,6.5rem)] leading-[0.92] font-extrabold tracking-tight text-balance"
               style={{ animationDelay: "80ms" }}
             >
+
               Ayush <span className="underline-wavy">Zade</span>
             </h1>
             <div className="animate-rise mt-6 flex flex-wrap justify-center gap-3" style={{ animationDelay: "160ms" }}>
