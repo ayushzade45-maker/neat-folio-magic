@@ -2,8 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav, SiteFooter } from "@/components/SiteNav";
 import { SkillsMarquee } from "@/components/Marquee";
 
-
 export const Route = createFileRoute("/")({
+
   head: () => ({
     meta: [
       { title: "Ayush Zade — AI / ML Engineer" },
