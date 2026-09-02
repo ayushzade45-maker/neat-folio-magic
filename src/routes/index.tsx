@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav, SiteFooter } from "@/components/SiteNav";
 import { SkillsMarquee } from "@/components/Marquee";
-import sculpture from "@/assets/ml-sculpture.jpg";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
