@@ -1,8 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav, SiteFooter } from "@/components/SiteNav";
 import { SkillsMarquee } from "@/components/Marquee";
+import ayushAsset from "@/assets/ayush.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
+
 
   head: () => ({
     meta: [
