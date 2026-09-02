@@ -76,7 +76,8 @@ function Projects() {
             className="animate-rise mt-4 font-display text-4xl font-extrabold tracking-tight text-balance sm:text-5xl"
             style={{ animationDelay: "80ms" }}
           >
-            Things I've trained, tracked & shipped.
+            Things I've <span className="underline-wavy">trained</span>, tracked &{" "}
+            <span className="text-stroke">shipped</span>.
           </h1>
           <div className="mt-14">
             {projects.map((project, i) => (
