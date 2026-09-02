@@ -82,7 +82,7 @@ function About() {
           </h1>
 
           <div className="mt-14 grid gap-5 md:grid-cols-2">
-            <div className="animate-rise rounded-3xl border border-line bg-peach-soft p-6" style={{ animationDelay: "160ms" }}>
+            <div className="animate-rise -rotate-[0.6deg] rounded-3xl border border-line bg-peach-soft p-6 transition-transform duration-300 hover:rotate-0" style={{ animationDelay: "160ms" }}>
               <h2 className="font-display text-lg font-bold tracking-tight">Education</h2>
               <ol className="mt-4 border-l border-line">
                 {education.map((entry, i) => (
@@ -104,7 +104,7 @@ function About() {
               </div>
             </div>
 
-            <div className="animate-rise rounded-3xl border border-line bg-butter-soft p-6" style={{ animationDelay: "240ms" }}>
+            <div className="animate-rise rotate-[0.6deg] rounded-3xl border border-line bg-butter-soft p-6 transition-transform duration-300 hover:rotate-0" style={{ animationDelay: "240ms" }}>
               <h2 className="font-display text-lg font-bold tracking-tight">Certifications</h2>
               <ul className="mt-4 space-y-2.5">
                 {certifications.map((cert) => (
