@@ -106,8 +106,8 @@ function Home() {
           </div>
         </section>
 
-
         <SkillsMarquee />
+
 
         <section className="mx-auto max-w-5xl px-6 py-16">
           <div className="flex flex-wrap items-center justify-between gap-4">
