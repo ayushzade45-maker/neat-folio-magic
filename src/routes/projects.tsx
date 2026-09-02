@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav, SiteFooter } from "@/components/SiteNav";
+import { SkillsMarquee } from "@/components/Marquee";
 
 export const Route = createFileRoute("/projects")({
   head: () => ({
@@ -83,7 +84,7 @@ function Projects() {
             {projects.map((project, i) => (
               <article
                 key={project.title}
-                className={`animate-rise rounded-3xl border border-line p-6 transition-all duration-300 hover:-translate-y-1 sm:p-9 ${project.bg} ${project.hoverBorder} ${i > 0 ? "mt-5" : ""}`}
+                className={`animate-rise rounded-3xl border border-line p-6 transition-all duration-300 hover:-translate-y-1 hover:rotate-[0.4deg] sm:p-9 ${project.bg} ${project.hoverBorder} ${i > 0 ? "mt-5" : ""}`}
                 style={{ animationDelay: `${160 + i * 80}ms` }}
               >
                 <div className="flex flex-wrap items-start justify-between gap-4">
@@ -134,6 +135,7 @@ function Projects() {
           </div>
         </section>
       </main>
+      <SkillsMarquee />
       <SiteFooter />
     </div>
   );

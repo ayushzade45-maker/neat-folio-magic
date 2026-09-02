@@ -78,7 +78,7 @@ function About() {
             className="animate-rise mt-4 max-w-[20ch] font-display text-4xl font-extrabold tracking-tight text-balance sm:text-5xl"
             style={{ animationDelay: "80ms" }}
           >
-            The record so far.
+            The <span className="underline-wavy">record</span> so far.
           </h1>
 
           <div className="mt-14 grid gap-5 md:grid-cols-2">
